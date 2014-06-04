@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n47-Ig-nAg"/>
+                        <viewControllerLayoutGuide type="bottom" id="oWH-pU-RrE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Last Stick" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="205" translatesAutoresizingMaskIntoConstraints="NO" id="EDy-RI-LAP" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="58" y="55" width="205" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.63709435748477983" blue="0.24823747804542862" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVQ-ye-IRL">
+                                <rect key="frame" x="123" y="220" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleColor" red="0.57050591230000003" green="1" blue="0.082238743619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fa7-xH-66U" kind="modal" id="fne-fN-GJU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhQ-Lu-uV2">
+                                <rect key="frame" x="73" y="295" width="175" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
+                                <state key="normal" title="Buscar Rival">
+                                    <color key="titleColor" red="0.57050591230000003" green="1" blue="0.082238743619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gU4-qj-5ds"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.22467120532730234" blue="0.45392219387755106" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KqS-zW-sSM"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="EDy-RI-LAP" id="4a0-tF-Noa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-733" y="359"/>
+        </scene>
+        <!--Modal Form View Controller-->
+        <scene sceneID="UMA-An-sdV">
+            <objects>
+                <viewController id="fa7-xH-66U" customClass="ModalFormViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Bz-iU-YuK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bc1-2r-DqJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ns7-Ax-X56">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Last Stick" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="205" translatesAutoresizingMaskIntoConstraints="NO" id="KL0-Rr-3s0" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="52" y="55" width="205" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.63709435749999999" blue="0.24823747800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrD-XQ-4uj">
+                                <rect key="frame" x="58" y="187" width="78" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <color key="textColor" red="0.57050591230000003" green="1" blue="0.082238743619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ml-Xw-dmY">
+                                <rect key="frame" x="58" y="219" width="205" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4z-0d-v16">
+                                <rect key="frame" x="58" y="262" width="81" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <color key="textColor" red="0.57050591230000003" green="1" blue="0.082238743619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eal-3V-tD6">
+                                <rect key="frame" x="58" y="294" width="205" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkm-uS-g3h">
+                                <rect key="frame" x="107" y="332" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleColor" red="0.57050591230000003" green="1" blue="0.082238743619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rYY-c7-wz7" kind="modal" identifier="pushFromSource" id="kbY-sg-KqJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039224743843079" green="0.27450981736183167" blue="0.51372551918029785" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vrg-Vb-MYa"/>
+                    <connections>
+                        <outlet property="inputFieldPLayer1" destination="3ml-Xw-dmY" id="Emd-PT-i8e"/>
+                        <outlet property="inputFieldPlayer2" destination="eal-3V-tD6" id="J7O-7k-8vY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Q9-do-QCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="359"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="eY8-tC-u0f">
+            <objects>
+                <viewController id="rYY-c7-wz7" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bC6-Bc-GbL"/>
+                        <viewControllerLayoutGuide type="bottom" id="O11-v7-JcS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gkm-qB-mSJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-Ls-2Bo">
+                                <rect key="frame" x="20" y="523" width="82" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" red="0.57050591230000003" green="1" blue="0.082238743619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84B-Ih-801">
+                                <rect key="frame" x="218" y="523" width="82" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" red="0.57050591230000003" green="1" blue="0.082238743619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8l-ca-0u8">
+                                <rect key="frame" x="113" y="514" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Pasar Turno">
+                                    <color key="titleColor" red="0.93939338169999997" green="1" blue="0.04208205324" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeChange:" destination="rYY-c7-wz7" eventType="touchUpInside" id="e8v-iU-VEi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-bI-hXN">
+                                <rect key="frame" x="269" y="20" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                <state key="normal" title="Salir">
+                                    <color key="titleColor" red="0.93939338169999997" green="1" blue="0.04208205324" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="rYY-c7-wz7" eventType="touchUpInside" id="Q8P-RY-AZn"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="Jk3-6A-kr3">
+                                <rect key="frame" x="151" y="96" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="BQn-3l-bu8">
+                                <rect key="frame" x="151" y="155" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="0uV-gS-WCe">
+                                <rect key="frame" x="123" y="155" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="heN-8v-I3Z">
+                                <rect key="frame" x="123" y="214" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="fVj-uz-yDd">
+                                <rect key="frame" x="95" y="214" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="N8z-Ip-6Tl">
+                                <rect key="frame" x="151" y="214" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="6K7-mF-CId">
+                                <rect key="frame" x="179" y="155" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="ZNH-gz-tBH">
+                                <rect key="frame" x="207" y="214" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-Z3-CCg">
+                                <rect key="frame" x="179" y="214" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="vMN-fr-fGU">
+                                <rect key="frame" x="95" y="273" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="nkP-bu-x4y">
+                                <rect key="frame" x="65" y="273" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="MUG-yi-TM4">
+                                <rect key="frame" x="123" y="273" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="14" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-Qt-lXK">
+                                <rect key="frame" x="179" y="273" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-bQ-neG">
+                                <rect key="frame" x="207" y="273" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="16" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="7cx-JM-SuG">
+                                <rect key="frame" x="235" y="273" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="elS-p5-YsH">
+                                <rect key="frame" x="151" y="273" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="18" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="kKk-3J-Q7g">
+                                <rect key="frame" x="65" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="17" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="fBJ-n1-bhb">
+                                <rect key="frame" x="37" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="19" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="vcb-a2-yO9">
+                                <rect key="frame" x="95" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="STz-iv-8R5">
+                                <rect key="frame" x="151" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-L6-LaZ">
+                                <rect key="frame" x="179" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="989-WN-SHW">
+                                <rect key="frame" x="207" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="24" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="zZt-6M-xHB">
+                                <rect key="frame" x="235" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="8Hs-HF-w4l">
+                                <rect key="frame" x="263" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="20" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick" translatesAutoresizingMaskIntoConstraints="NO" id="lL0-VS-qRg">
+                                <rect key="frame" x="123" y="332" width="20" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Last Stick" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="205" translatesAutoresizingMaskIntoConstraints="NO" id="odu-3K-8CR" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="58" y="20" width="205" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.63709435749999999" blue="0.24823747800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tu turno" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjt-M9-LiE">
+                                <rect key="frame" x="20" y="489" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.93939338169999997" green="1" blue="0.04208205324" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tu turno" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yc-Qx-Vhs">
+                                <rect key="frame" x="237" y="489" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.93939338169999997" green="1" blue="0.04208205324" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094155940965461815" green="0.19172719295383561" blue="0.49978077168367352" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="O11-v7-JcS" firstAttribute="top" secondItem="84B-Ih-801" secondAttribute="bottom" constant="20" id="4Pt-XG-dgR"/>
+                            <constraint firstItem="M8l-ca-0u8" firstAttribute="leading" secondItem="pYw-Ls-2Bo" secondAttribute="trailing" constant="11" id="FQ7-97-3Rj"/>
+                            <constraint firstAttribute="trailing" secondItem="84B-Ih-801" secondAttribute="trailing" constant="20" id="H5O-3B-poZ"/>
+                            <constraint firstItem="Pjt-M9-LiE" firstAttribute="leading" secondItem="gkm-qB-mSJ" secondAttribute="leading" constant="20" id="Jk9-WU-WCU"/>
+                            <constraint firstItem="O11-v7-JcS" firstAttribute="top" secondItem="pYw-Ls-2Bo" secondAttribute="bottom" constant="20" id="Nkn-z3-JBg"/>
+                            <constraint firstItem="84B-Ih-801" firstAttribute="leading" secondItem="M8l-ca-0u8" secondAttribute="trailing" constant="11" id="PcR-2I-xLz"/>
+                            <constraint firstItem="O11-v7-JcS" firstAttribute="top" secondItem="M8l-ca-0u8" secondAttribute="bottom" constant="24" id="QiF-Sn-bcy"/>
+                            <constraint firstAttribute="bottom" secondItem="Pjt-M9-LiE" secondAttribute="bottom" constant="58" id="abN-4u-Kh0"/>
+                            <constraint firstAttribute="trailing" secondItem="4yc-Qx-Vhs" secondAttribute="trailing" constant="20" id="fzk-4r-qE1"/>
+                            <constraint firstItem="pYw-Ls-2Bo" firstAttribute="leading" secondItem="gkm-qB-mSJ" secondAttribute="leading" constant="20" id="gbU-XT-MQF"/>
+                            <constraint firstItem="O11-v7-JcS" firstAttribute="top" secondItem="4yc-Qx-Vhs" secondAttribute="bottom" constant="58" id="hnr-tO-pqA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="Jk3-6A-kr3" id="qDu-4t-93J"/>
+                        <outlet property="image10" destination="nkP-bu-x4y" id="haQ-65-hY3"/>
+                        <outlet property="image11" destination="vMN-fr-fGU" id="oId-hb-KxN"/>
+                        <outlet property="image12" destination="MUG-yi-TM4" id="r7s-4h-tnN"/>
+                        <outlet property="image13" destination="elS-p5-YsH" id="Qsq-6V-Xv4"/>
+                        <outlet property="image14" destination="uIE-Qt-lXK" id="OTl-Re-LvD"/>
+                        <outlet property="image15" destination="0ni-bQ-neG" id="CiT-SC-YH3"/>
+                        <outlet property="image16" destination="7cx-JM-SuG" id="JDx-1J-Qu4"/>
+                        <outlet property="image17" destination="fBJ-n1-bhb" id="C6B-RJ-u8m"/>
+                        <outlet property="image18" destination="kKk-3J-Q7g" id="h3a-ns-EYO"/>
+                        <outlet property="image19" destination="vcb-a2-yO9" id="JbO-55-Kw8"/>
+                        <outlet property="image2" destination="0uV-gS-WCe" id="qVF-dJ-0b0"/>
+                        <outlet property="image20" destination="lL0-VS-qRg" id="LD5-s2-Mo7"/>
+                        <outlet property="image21" destination="STz-iv-8R5" id="3uk-BH-QDk"/>
+                        <outlet property="image22" destination="ccf-L6-LaZ" id="mmM-CS-2TW"/>
+                        <outlet property="image23" destination="989-WN-SHW" id="mOh-ZU-TKv"/>
+                        <outlet property="image24" destination="zZt-6M-xHB" id="U8y-Xv-jhV"/>
+                        <outlet property="image25" destination="8Hs-HF-w4l" id="pS2-Yd-UzJ"/>
+                        <outlet property="image3" destination="BQn-3l-bu8" id="UZx-sq-eA9"/>
+                        <outlet property="image4" destination="6K7-mF-CId" id="fLv-L9-NhZ"/>
+                        <outlet property="image5" destination="fVj-uz-yDd" id="dCZ-fX-Iv1"/>
+                        <outlet property="image6" destination="heN-8v-I3Z" id="nxf-nd-Fj4"/>
+                        <outlet property="image7" destination="N8z-Ip-6Tl" id="c9E-9p-DDP"/>
+                        <outlet property="image8" destination="I3C-Z3-CCg" id="DXa-eu-xKc"/>
+                        <outlet property="image9" destination="ZNH-gz-tBH" id="L6E-Uc-TdM"/>
+                        <outlet property="player1" destination="pYw-Ls-2Bo" id="jM9-Rp-EMv"/>
+                        <outlet property="player2" destination="84B-Ih-801" id="fdh-ND-3je"/>
+                        <outlet property="turnPlayer1" destination="Pjt-M9-LiE" id="6Gt-mb-JGX"/>
+                        <outlet property="turnPlayer2" destination="4yc-Qx-Vhs" id="orC-47-6u3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXC-DE-b5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="359"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Stick" width="214" height="1065"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

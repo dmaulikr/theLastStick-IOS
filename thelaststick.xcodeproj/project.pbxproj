@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5D7D57B193B21CF00CE0FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7D57A193B21CF00CE0FDF /* Foundation.framework */; };
+		F5D7D57D193B21CF00CE0FDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7D57C193B21CF00CE0FDF /* CoreGraphics.framework */; };
+		F5D7D57F193B21CF00CE0FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7D57E193B21CF00CE0FDF /* UIKit.framework */; };
+		F5D7D585193B21CF00CE0FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D7D583193B21CF00CE0FDF /* InfoPlist.strings */; };
+		F5D7D587193B21CF00CE0FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D586193B21CF00CE0FDF /* main.m */; };
+		F5D7D58B193B21CF00CE0FDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D58A193B21CF00CE0FDF /* AppDelegate.m */; };
+		F5D7D58E193B21CF00CE0FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D7D58C193B21CF00CE0FDF /* Main.storyboard */; };
+		F5D7D591193B21CF00CE0FDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D590193B21CF00CE0FDF /* ViewController.m */; };
+		F5D7D593193B21CF00CE0FDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D7D592193B21CF00CE0FDF /* Images.xcassets */; };
+		F5D7D59A193B21CF00CE0FDF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7D599193B21CF00CE0FDF /* XCTest.framework */; };
+		F5D7D59B193B21CF00CE0FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7D57A193B21CF00CE0FDF /* Foundation.framework */; };
+		F5D7D59C193B21CF00CE0FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7D57E193B21CF00CE0FDF /* UIKit.framework */; };
+		F5D7D5A4193B21CF00CE0FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D7D5A2193B21CF00CE0FDF /* InfoPlist.strings */; };
+		F5D7D5A6193B21CF00CE0FDF /* thelaststickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D5A5193B21CF00CE0FDF /* thelaststickTests.m */; };
+		F5D7D5B1193B3CD900CE0FDF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D5B0193B3CD900CE0FDF /* MainViewController.m */; };
+		F5D7D5BA193B45BF00CE0FDF /* ModalFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D5B9193B45BF00CE0FDF /* ModalFormViewController.m */; };
+		F5D7D5BD193B45D300CE0FDF /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D5BC193B45D300CE0FDF /* GameViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5D7D59D193B21CF00CE0FDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D7D56F193B21CF00CE0FDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5D7D576193B21CF00CE0FDF;
+			remoteInfo = thelaststick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5D7D577193B21CF00CE0FDF /* thelaststick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thelaststick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D7D57A193B21CF00CE0FDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5D7D57C193B21CF00CE0FDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F5D7D57E193B21CF00CE0FDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F5D7D582193B21CF00CE0FDF /* thelaststick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thelaststick-Info.plist"; sourceTree = "<group>"; };
+		F5D7D584193B21CF00CE0FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5D7D586193B21CF00CE0FDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5D7D588193B21CF00CE0FDF /* thelaststick-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thelaststick-Prefix.pch"; sourceTree = "<group>"; };
+		F5D7D589193B21CF00CE0FDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5D7D58A193B21CF00CE0FDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5D7D58D193B21CF00CE0FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5D7D58F193B21CF00CE0FDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5D7D590193B21CF00CE0FDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5D7D592193B21CF00CE0FDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5D7D598193B21CF00CE0FDF /* thelaststickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thelaststickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D7D599193B21CF00CE0FDF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F5D7D5A1193B21CF00CE0FDF /* thelaststickTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thelaststickTests-Info.plist"; sourceTree = "<group>"; };
+		F5D7D5A3193B21CF00CE0FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5D7D5A5193B21CF00CE0FDF /* thelaststickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thelaststickTests.m; sourceTree = "<group>"; };
+		F5D7D5AF193B3CD900CE0FDF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F5D7D5B0193B3CD900CE0FDF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F5D7D5B8193B45BF00CE0FDF /* ModalFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalFormViewController.h; sourceTree = "<group>"; };
+		F5D7D5B9193B45BF00CE0FDF /* ModalFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalFormViewController.m; sourceTree = "<group>"; };
+		F5D7D5BB193B45D300CE0FDF /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F5D7D5BC193B45D300CE0FDF /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5D7D574193B21CF00CE0FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7D57D193B21CF00CE0FDF /* CoreGraphics.framework in Frameworks */,
+				F5D7D57F193B21CF00CE0FDF /* UIKit.framework in Frameworks */,
+				F5D7D57B193B21CF00CE0FDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D7D595193B21CF00CE0FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7D59A193B21CF00CE0FDF /* XCTest.framework in Frameworks */,
+				F5D7D59C193B21CF00CE0FDF /* UIKit.framework in Frameworks */,
+				F5D7D59B193B21CF00CE0FDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5D7D56E193B21CF00CE0FDF = {
+			isa = PBXGroup;
+			children = (
+				F5D7D580193B21CF00CE0FDF /* thelaststick */,
+				F5D7D59F193B21CF00CE0FDF /* thelaststickTests */,
+				F5D7D579193B21CF00CE0FDF /* Frameworks */,
+				F5D7D578193B21CF00CE0FDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D7D578193B21CF00CE0FDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7D577193B21CF00CE0FDF /* thelaststick.app */,
+				F5D7D598193B21CF00CE0FDF /* thelaststickTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D7D579193B21CF00CE0FDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7D57A193B21CF00CE0FDF /* Foundation.framework */,
+				F5D7D57C193B21CF00CE0FDF /* CoreGraphics.framework */,
+				F5D7D57E193B21CF00CE0FDF /* UIKit.framework */,
+				F5D7D599193B21CF00CE0FDF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5D7D580193B21CF00CE0FDF /* thelaststick */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7D589193B21CF00CE0FDF /* AppDelegate.h */,
+				F5D7D58A193B21CF00CE0FDF /* AppDelegate.m */,
+				F5D7D58C193B21CF00CE0FDF /* Main.storyboard */,
+				F5D7D58F193B21CF00CE0FDF /* ViewController.h */,
+				F5D7D590193B21CF00CE0FDF /* ViewController.m */,
+				F5D7D592193B21CF00CE0FDF /* Images.xcassets */,
+				F5D7D581193B21CF00CE0FDF /* Supporting Files */,
+				F5D7D5AF193B3CD900CE0FDF /* MainViewController.h */,
+				F5D7D5B0193B3CD900CE0FDF /* MainViewController.m */,
+				F5D7D5B8193B45BF00CE0FDF /* ModalFormViewController.h */,
+				F5D7D5B9193B45BF00CE0FDF /* ModalFormViewController.m */,
+				F5D7D5BB193B45D300CE0FDF /* GameViewController.h */,
+				F5D7D5BC193B45D300CE0FDF /* GameViewController.m */,
+			);
+			path = thelaststick;
+			sourceTree = "<group>";
+		};
+		F5D7D581193B21CF00CE0FDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7D582193B21CF00CE0FDF /* thelaststick-Info.plist */,
+				F5D7D583193B21CF00CE0FDF /* InfoPlist.strings */,
+				F5D7D586193B21CF00CE0FDF /* main.m */,
+				F5D7D588193B21CF00CE0FDF /* thelaststick-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5D7D59F193B21CF00CE0FDF /* thelaststickTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7D5A5193B21CF00CE0FDF /* thelaststickTests.m */,
+				F5D7D5A0193B21CF00CE0FDF /* Supporting Files */,
+			);
+			path = thelaststickTests;
+			sourceTree = "<group>";
+		};
+		F5D7D5A0193B21CF00CE0FDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7D5A1193B21CF00CE0FDF /* thelaststickTests-Info.plist */,
+				F5D7D5A2193B21CF00CE0FDF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5D7D576193B21CF00CE0FDF /* thelaststick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D7D5A9193B21CF00CE0FDF /* Build configuration list for PBXNativeTarget "thelaststick" */;
+			buildPhases = (
+				F5D7D573193B21CF00CE0FDF /* Sources */,
+				F5D7D574193B21CF00CE0FDF /* Frameworks */,
+				F5D7D575193B21CF00CE0FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thelaststick;
+			productName = thelaststick;
+			productReference = F5D7D577193B21CF00CE0FDF /* thelaststick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5D7D597193B21CF00CE0FDF /* thelaststickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D7D5AC193B21CF00CE0FDF /* Build configuration list for PBXNativeTarget "thelaststickTests" */;
+			buildPhases = (
+				F5D7D594193B21CF00CE0FDF /* Sources */,
+				F5D7D595193B21CF00CE0FDF /* Frameworks */,
+				F5D7D596193B21CF00CE0FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D7D59E193B21CF00CE0FDF /* PBXTargetDependency */,
+			);
+			name = thelaststickTests;
+			productName = thelaststickTests;
+			productReference = F5D7D598193B21CF00CE0FDF /* thelaststickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D7D56F193B21CF00CE0FDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Victor Alvarez Perez";
+				TargetAttributes = {
+					F5D7D597193B21CF00CE0FDF = {
+						TestTargetID = F5D7D576193B21CF00CE0FDF;
+					};
+				};
+			};
+			buildConfigurationList = F5D7D572193B21CF00CE0FDF /* Build configuration list for PBXProject "thelaststick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5D7D56E193B21CF00CE0FDF;
+			productRefGroup = F5D7D578193B21CF00CE0FDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D7D576193B21CF00CE0FDF /* thelaststick */,
+				F5D7D597193B21CF00CE0FDF /* thelaststickTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5D7D575193B21CF00CE0FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7D593193B21CF00CE0FDF /* Images.xcassets in Resources */,
+				F5D7D585193B21CF00CE0FDF /* InfoPlist.strings in Resources */,
+				F5D7D58E193B21CF00CE0FDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D7D596193B21CF00CE0FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7D5A4193B21CF00CE0FDF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5D7D573193B21CF00CE0FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7D5BA193B45BF00CE0FDF /* ModalFormViewController.m in Sources */,
+				F5D7D591193B21CF00CE0FDF /* ViewController.m in Sources */,
+				F5D7D58B193B21CF00CE0FDF /* AppDelegate.m in Sources */,
+				F5D7D587193B21CF00CE0FDF /* main.m in Sources */,
+				F5D7D5BD193B45D300CE0FDF /* GameViewController.m in Sources */,
+				F5D7D5B1193B3CD900CE0FDF /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D7D594193B21CF00CE0FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7D5A6193B21CF00CE0FDF /* thelaststickTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5D7D59E193B21CF00CE0FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5D7D576193B21CF00CE0FDF /* thelaststick */;
+			targetProxy = F5D7D59D193B21CF00CE0FDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5D7D583193B21CF00CE0FDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D7D584193B21CF00CE0FDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F5D7D58C193B21CF00CE0FDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D7D58D193B21CF00CE0FDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D7D5A2193B21CF00CE0FDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D7D5A3193B21CF00CE0FDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5D7D5A7193B21CF00CE0FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5D7D5A8193B21CF00CE0FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5D7D5AA193B21CF00CE0FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thelaststick/thelaststick-Prefix.pch";
+				INFOPLIST_FILE = "thelaststick/thelaststick-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F5D7D5AB193B21CF00CE0FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thelaststick/thelaststick-Prefix.pch";
+				INFOPLIST_FILE = "thelaststick/thelaststick-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F5D7D5AD193B21CF00CE0FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/thelaststick.app/thelaststick";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thelaststick/thelaststick-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "thelaststickTests/thelaststickTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F5D7D5AE193B21CF00CE0FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/thelaststick.app/thelaststick";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thelaststick/thelaststick-Prefix.pch";
+				INFOPLIST_FILE = "thelaststickTests/thelaststickTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5D7D572193B21CF00CE0FDF /* Build configuration list for PBXProject "thelaststick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7D5A7193B21CF00CE0FDF /* Debug */,
+				F5D7D5A8193B21CF00CE0FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D7D5A9193B21CF00CE0FDF /* Build configuration list for PBXNativeTarget "thelaststick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7D5AA193B21CF00CE0FDF /* Debug */,
+				F5D7D5AB193B21CF00CE0FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D7D5AC193B21CF00CE0FDF /* Build configuration list for PBXNativeTarget "thelaststickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7D5AD193B21CF00CE0FDF /* Debug */,
+				F5D7D5AE193B21CF00CE0FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5D7D56F193B21CF00CE0FDF /* Project object */;
+}
