@@ -82,6 +82,12 @@
     if (buttonIndex == 0){
         [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     } else {
+        for (int i = 0; i < self.imagesArray.count; i++) {
+            ((UIImageView *)[self.imagesArray objectAtIndex:i]).image = [UIImage imageNamed:@"Stick"];
+            [self.imgArray removeAllObjects];
+            [self.lastMovement removeAllObjects];
+            [self.movementImage removeAllObjects];
+        }
     }
 }
 //Variable donde guardo la altura para ver si son de la misma fila
