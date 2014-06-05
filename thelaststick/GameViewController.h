@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSMutableArray *imgArray;
 @property (nonatomic, strong) NSMutableDictionary *movementImage;
 @property (nonatomic, strong) NSMutableArray *lastMovement;
+@property (nonatomic, strong) NSMutableArray *imagesArray;
 
 @property (nonatomic, strong) NSString *img;
 @property (nonatomic) bool first;
