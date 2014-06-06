@@ -137,6 +137,20 @@ float lastLeft;
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ganador:" message:self.player2.text delegate:self cancelButtonTitle:@"Salir" otherButtonTitles:@"Volver a jugar", nil];
             [alert show];
         }
+    } else if ([self.imgArray count] == 25) {
+        if (self.turnPlayer1.hidden == 0) {
+            NSLog(@"%@", self.player1.text);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ganador:" message:self.player2.text delegate:self cancelButtonTitle:@"Salir" otherButtonTitles:@"Volver a jugar", nil];
+            [alert show];
+            [self.turnPlayer2 setHidden:NO];
+            [self.turnPlayer1 setHidden:YES];
+        } else {
+            NSLog(@"%@", self.player2.text);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ganador:" message:self.player1.text delegate:self cancelButtonTitle:@"Salir" otherButtonTitles:@"Volver a jugar", nil];
+            [alert show];
+            [self.turnPlayer2 setHidden:YES];
+            [self.turnPlayer1 setHidden:NO];
+        }
     }
 }
 
